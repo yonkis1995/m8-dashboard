@@ -1,0 +1,1103 @@
+{
+  "meta": {
+    "title": "М-8 «Холмогоры»",
+    "subtitle": "Планы по развитию М-8 «Холмогоры» и оценка эффектов на время в пути на автомобиле",
+    "sourceWorkbook": "М-8 Холмогоры.xlsx",
+    "dataDate": "2026-09-10",
+    "defaultRouteId": "route-01",
+    "defaultYear": 2029,
+    "years": [
+      2026,
+      2027,
+      2028,
+      2029
+    ],
+    "note": "Диапазон времени формируется только вариативностью на моделируемых участках. Существующее время по каждой корреспонденции задается как середина диапазона; для существующего положения используются скорости неблагоприятных и нормальных условий на всех релевантных моделируемых участках. После реконструкции для обычных участков приняты 80–95 км/ч, для платного дублера км 115–135 — 95–110 км/ч. На остальных частях маршрута время одинаково в обеих ветках.",
+    "periods": [
+      2026,
+      2027,
+      2028,
+      2029,
+      "after2030"
+    ],
+    "after2030Label": "После 2030"
+  },
+  "sections": [
+    {
+      "id": "m8-35-40",
+      "name": "Пушкино — ЦКАД, км 35–40",
+      "lanesBefore": "4–6",
+      "lanesAfter": "8–10",
+      "kmStart": 35,
+      "kmEnd": 40,
+      "newLengthKm": 5,
+      "targetState": "IБ, расчетная скорость 120 км/ч",
+      "status": "В работе",
+      "commissionYear": 2026,
+      "includeInCalculations": true,
+      "sources": [
+        "https://www.zaovad.ru/news/291/"
+      ],
+      "existingLengthKm": 5,
+      "designSpeedKmh": 120,
+      "speedAfterKmh": 95,
+      "effectStartYear": 2027,
+      "speedBeforeBadKmh": 20,
+      "speedBeforeNormalKmh": 40,
+      "includeAfter2030": true,
+      "speedAfterBadKmh": 80,
+      "speedAfterNormalKmh": 95
+    },
+    {
+      "id": "m8-40-47",
+      "name": "Пушкино — ЦКАД, км 40–47",
+      "lanesBefore": "4–6",
+      "lanesAfter": "8–10",
+      "kmStart": 40,
+      "kmEnd": 47,
+      "newLengthKm": 7,
+      "targetState": "IБ, расчетная скорость 120 км/ч",
+      "status": "В работе",
+      "commissionYear": 2028,
+      "includeInCalculations": true,
+      "sources": [
+        "https://www.mintrans.gov.ru/eye/press-center/news/12483"
+      ],
+      "existingLengthKm": 7,
+      "designSpeedKmh": 120,
+      "speedAfterKmh": 95,
+      "effectStartYear": 2029,
+      "speedBeforeBadKmh": 20,
+      "speedBeforeNormalKmh": 40,
+      "includeAfter2030": true,
+      "speedAfterBadKmh": 80,
+      "speedAfterNormalKmh": 95
+    },
+    {
+      "id": "m8-115-135",
+      "name": "км 115–135, подход к Переславлю (платный дублер)",
+      "lanesBefore": "2",
+      "lanesAfter": "4",
+      "kmStart": 115,
+      "kmEnd": 135,
+      "newLengthKm": 26,
+      "targetState": "IБ, расчетная скорость 120 км/ч",
+      "status": "Проектирование",
+      "commissionYear": 2028,
+      "includeInCalculations": false,
+      "sources": [
+        "http://static.government.ru/media/files/AhJjPi2OA0mz8FHlBaWAqRnVD5XuItbg.pdf",
+        "https://sudact.ru/law/rasporiazhenie-pravitelstva-rf-ot-07042026-n-763-r/programma-deiatelnosti-gosudarstvennoi-kompanii-rossiiskie/prilozhenie-n-6/14/"
+      ],
+      "existingLengthKm": 20,
+      "designSpeedKmh": 120,
+      "speedAfterKmh": 110,
+      "effectStartYear": 2029,
+      "speedBeforeBadKmh": 50,
+      "speedBeforeNormalKmh": 60,
+      "includeAfter2030": true,
+      "speedAfterBadKmh": 95,
+      "speedAfterNormalKmh": 110
+    },
+    {
+      "id": "m8-pereslavl-bypass",
+      "name": "Обход Переславля, км 4–19,2",
+      "lanesBefore": "2",
+      "lanesAfter": "4",
+      "kmStart": 4,
+      "kmEnd": 19.2,
+      "newLengthKm": 19.2,
+      "targetState": "II, расчетная скорость 120 км/ч",
+      "status": "Проектирование",
+      "commissionYear": "Не определен",
+      "includeInCalculations": false,
+      "sources": [
+        "https://base.garant.ru/414402117/"
+      ],
+      "existingLengthKm": 19.2,
+      "designSpeedKmh": 120,
+      "speedAfterKmh": 95,
+      "effectStartYear": null,
+      "speedBeforeBadKmh": 50,
+      "speedBeforeNormalKmh": 60,
+      "includeAfter2030": true,
+      "speedAfterBadKmh": 80,
+      "speedAfterNormalKmh": 95
+    },
+    {
+      "id": "m8-145-160",
+      "name": "км 145,07–160,07",
+      "lanesBefore": "2",
+      "lanesAfter": "4",
+      "kmStart": 145,
+      "kmEnd": 160,
+      "newLengthKm": 15,
+      "targetState": "II, расчетная скорость 120 км/ч",
+      "status": "Проектирование. Требуется доработка ПД.",
+      "commissionYear": "Не определен",
+      "includeInCalculations": false,
+      "sources": [
+        "https://base.garant.ru/414402119/",
+        "https://egrz.ru/organisation/reestr/detail/76-1-2-2-009243-2026"
+      ],
+      "existingLengthKm": 15,
+      "designSpeedKmh": 120,
+      "speedAfterKmh": 95,
+      "effectStartYear": null,
+      "speedBeforeBadKmh": 50,
+      "speedBeforeNormalKmh": 60,
+      "includeAfter2030": true,
+      "speedAfterBadKmh": 80,
+      "speedAfterNormalKmh": 95
+    },
+    {
+      "id": "m8-165-180",
+      "name": "км 165–180",
+      "lanesBefore": "2",
+      "lanesAfter": "4",
+      "kmStart": 165,
+      "kmEnd": 180,
+      "newLengthKm": 15,
+      "targetState": "II, расчетная скорость 120 км/ч",
+      "status": "В работе",
+      "commissionYear": 2028,
+      "includeInCalculations": true,
+      "sources": [
+        "https://zaovad.ru/news/296/"
+      ],
+      "existingLengthKm": 15,
+      "designSpeedKmh": 120,
+      "speedAfterKmh": 95,
+      "effectStartYear": 2029,
+      "speedBeforeBadKmh": 40,
+      "speedBeforeNormalKmh": 60,
+      "includeAfter2030": true,
+      "speedAfterBadKmh": 80,
+      "speedAfterNormalKmh": 95
+    },
+    {
+      "id": "m8-petrovskoe-bypass",
+      "name": "Обход н.п. Петровское",
+      "lanesBefore": "2",
+      "lanesAfter": "4",
+      "kmStart": 180,
+      "kmEnd": 186,
+      "newLengthKm": 5.5,
+      "targetState": "II, расчетная скорость 120 км/ч",
+      "status": "Проектирование",
+      "commissionYear": 2028,
+      "includeInCalculations": false,
+      "sources": [
+        "https://www.garant.ru/products/ipo/prime/doc/413899903",
+        "https://sudact.ru/law/rasporiazhenie-pravitelstva-rf-ot-07042026-n-763-r/programma-deiatelnosti-gosudarstvennoi-kompanii-rossiiskie/prilozhenie-n-6/14/"
+      ],
+      "existingLengthKm": 5.5,
+      "designSpeedKmh": 120,
+      "speedAfterKmh": 95,
+      "effectStartYear": 2029,
+      "speedBeforeBadKmh": 50,
+      "speedBeforeNormalKmh": 60,
+      "includeAfter2030": true,
+      "speedAfterBadKmh": 80,
+      "speedAfterNormalKmh": 95
+    },
+    {
+      "id": "m8-195-201",
+      "name": "км 195–201, подход к Ростову",
+      "lanesBefore": "2",
+      "lanesAfter": "4",
+      "kmStart": 195,
+      "kmEnd": 201,
+      "newLengthKm": 6,
+      "targetState": "II, расчетная скорость 120 км/ч ?",
+      "status": "В работе",
+      "commissionYear": 2027,
+      "includeInCalculations": true,
+      "sources": [
+        "https://nevgorod.ru/news/2026/8/5/1690035",
+        "https://yarglav.ru/transport/odin-iz-uchastkov-trassy-m-8-priznali-a/"
+      ],
+      "existingLengthKm": 6,
+      "designSpeedKmh": 120,
+      "speedAfterKmh": 95,
+      "effectStartYear": 2028,
+      "speedBeforeBadKmh": 40,
+      "speedBeforeNormalKmh": 60,
+      "includeAfter2030": true,
+      "speedAfterBadKmh": 80,
+      "speedAfterNormalKmh": 95
+    }
+  ],
+  "routes": [
+    {
+      "id": "route-01",
+      "origin": "ЯРОСЛАВЛЬ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 260,
+      "currentTimeMinutes": 270,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-02",
+      "origin": "ЯРОСЛАВЛЬ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "ПУШКИНО",
+      "destinationRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 232,
+      "currentTimeMinutes": 205,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-03",
+      "origin": "ЯРОСЛАВЛЬ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "СЕРГИЕВ ПОСАД",
+      "destinationRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 192,
+      "currentTimeMinutes": 165,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-04",
+      "origin": "ЯРОСЛАВЛЬ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "АЛЕКСАНДРОВ",
+      "destinationRegion": "ВЛАДИМИРСКАЯ ОБЛАСТЬ",
+      "distanceKm": 195,
+      "currentTimeMinutes": 180,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-05",
+      "origin": "ЯРОСЛАВЛЬ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "РОСТОВ ВЕЛИКИЙ",
+      "destinationRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 59,
+      "currentTimeMinutes": 59,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-06",
+      "origin": "РОСТОВ ВЕЛИКИЙ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 204,
+      "currentTimeMinutes": 200,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-07",
+      "origin": "РОСТОВ ВЕЛИКИЙ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "ПУШКИНО",
+      "destinationRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 177,
+      "currentTimeMinutes": 150,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-08",
+      "origin": "РОСТОВ ВЕЛИКИЙ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "СЕРГИЕВ ПОСАД",
+      "destinationRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 143,
+      "currentTimeMinutes": 128,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-09",
+      "origin": "РОСТОВ ВЕЛИКИЙ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "АЛЕКСАНДРОВ",
+      "destinationRegion": "ВЛАДИМИРСКАЯ ОБЛАСТЬ",
+      "distanceKm": 128,
+      "currentTimeMinutes": 126,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-10",
+      "origin": "АЛЕКСАНДРОВ",
+      "originRegion": "ВЛАДИМИРСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 118,
+      "currentTimeMinutes": 156,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-11",
+      "origin": "АЛЕКСАНДРОВ",
+      "originRegion": "ВЛАДИМИРСКАЯ ОБЛАСТЬ",
+      "destination": "ПУШКИНО",
+      "destinationRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 90,
+      "currentTimeMinutes": 84,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-12",
+      "origin": "АЛЕКСАНДРОВ",
+      "originRegion": "ВЛАДИМИРСКАЯ ОБЛАСТЬ",
+      "destination": "СЕРГИЕВ ПОСАД",
+      "destinationRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 49,
+      "currentTimeMinutes": 60,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-13",
+      "origin": "СЕРГИЕВ ПОСАД",
+      "originRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 69,
+      "currentTimeMinutes": 114,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-14",
+      "origin": "СЕРГИЕВ ПОСАД",
+      "originRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "destination": "ПУШКИНО",
+      "destinationRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 41,
+      "currentTimeMinutes": 46,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-15",
+      "origin": "ПУШКИНО",
+      "originRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 32,
+      "currentTimeMinutes": 45,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-16",
+      "origin": "ХОТЬКОВО",
+      "originRegion": "МОСКОВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 65,
+      "currentTimeMinutes": 76,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-17",
+      "origin": "СТРУНИНО",
+      "originRegion": "ВЛАДИМИРСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 108,
+      "currentTimeMinutes": 106,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-18",
+      "origin": "БЕРЕНДЕЕВО",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 155,
+      "currentTimeMinutes": 143,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0.5,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-19",
+      "origin": "ПЕРЕСЛАВЛЬ-ЗАЛЕССКИЙ",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 137,
+      "currentTimeMinutes": 125,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-20",
+      "origin": "НЕРЕХТА",
+      "originRegion": "КОСТРОМСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 320,
+      "currentTimeMinutes": 278,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-21",
+      "origin": "КОСТРОМА",
+      "originRegion": "КОСТРОМСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 330,
+      "currentTimeMinutes": 294,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": true,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": true
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 1,
+        "m8-195-201": 1,
+        "m8-115-135": 1,
+        "m8-pereslavl-bypass": 1,
+        "m8-145-160": 1,
+        "m8-petrovskoe-bypass": 1
+      }
+    },
+    {
+      "id": "route-22",
+      "origin": "КОСТРОМА",
+      "originRegion": "КОСТРОМСКАЯ ОБЛАСТЬ",
+      "destination": "ЯРОСЛАВЛЬ",
+      "destinationRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 82,
+      "currentTimeMinutes": 90,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-23",
+      "origin": "НЕРЕХТА",
+      "originRegion": "КОСТРОМСКАЯ ОБЛАСТЬ",
+      "destination": "ЯРОСЛАВЛЬ",
+      "destinationRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 71,
+      "currentTimeMinutes": 79,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-24",
+      "origin": "РЫБИНСК",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 310,
+      "currentTimeMinutes": 282,
+      "sectionFlags": {
+        "m8-35-40": true,
+        "m8-40-47": true,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 1,
+        "m8-40-47": 1,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-25",
+      "origin": "РЫБИНСК",
+      "originRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "destination": "ЯРОСЛАВЛЬ",
+      "destinationRegion": "ЯРОСЛАВСКАЯ ОБЛАСТЬ",
+      "distanceKm": 88,
+      "currentTimeMinutes": 93,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-26",
+      "origin": "ИВАНОВО",
+      "originRegion": "ИВАНОВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 291,
+      "currentTimeMinutes": 266,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-27",
+      "origin": "ТЕЙКОВО",
+      "originRegion": "ИВАНОВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 256,
+      "currentTimeMinutes": 267,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-28",
+      "origin": "ГАВРИЛОВ ПОСАД",
+      "originRegion": "ИВАНОВСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 208,
+      "currentTimeMinutes": 224,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-29",
+      "origin": "ЮРЬЕВ ПОЛЬСКИЙ",
+      "originRegion": "ВЛАДИМИРСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 167,
+      "currentTimeMinutes": 188,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    },
+    {
+      "id": "route-30",
+      "origin": "КОЛЬЧУГИНО",
+      "originRegion": "ВЛАДИМИРСКАЯ ОБЛАСТЬ",
+      "destination": "МОСКВА",
+      "destinationRegion": "МОСКВА",
+      "distanceKm": 135,
+      "currentTimeMinutes": 158,
+      "sectionFlags": {
+        "m8-35-40": false,
+        "m8-40-47": false,
+        "m8-115-135": false,
+        "m8-pereslavl-bypass": false,
+        "m8-145-160": false,
+        "m8-165-180": false,
+        "m8-petrovskoe-bypass": false,
+        "m8-195-201": false
+      },
+      "post2030Weights": {
+        "m8-35-40": 0,
+        "m8-40-47": 0,
+        "m8-165-180": 0,
+        "m8-195-201": 0,
+        "m8-115-135": 0,
+        "m8-pereslavl-bypass": 0,
+        "m8-145-160": 0,
+        "m8-petrovskoe-bypass": 0
+      }
+    }
+  ]
+}

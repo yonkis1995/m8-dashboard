@@ -67,6 +67,15 @@ function escapeHtml(value) {
     .replaceAll("'", '&#039;');
 }
 
+function russianPlural(number, one, few, many) {
+  const n = Math.abs(Number(number)) % 100;
+  const n1 = n % 10;
+  if (n > 10 && n < 20) return many;
+  if (n1 > 1 && n1 < 5) return few;
+  if (n1 === 1) return one;
+  return many;
+}
+
 function statusKey(status = '') {
   const s = status.toLowerCase();
   if (s.includes('в работе')) return 'working';
@@ -99,7 +108,8 @@ function normalizeRoutes(routes) {
 }
 
 function uiRoutes() {
-  const direct = normalizeRoutes(data.routes);
+  const direct = normalizeRoutes(data.routes)
+    .filter((route) => displayedRouteEffectRange(route, data.sections, AFTER_2030).max > 0);
   const seen = new Set();
   const result = [];
   direct.forEach((route) => {
@@ -228,7 +238,7 @@ function renderShell() {
             </div>
           </div>
           <div class="table-wrap"><table><thead><tr>
-            <th>Участок</th><th>Статус</th><th>Ввод</th><th>Протяженность</th><th>Эффект</th><th>Расчет</th>
+            <th>Участок</th><th>Статус</th><th>Ввод (план)</th><th>Протяженность</th><th>Эффект</th><th>Расчет</th>
           </tr></thead><tbody id="projectsBody"></tbody></table></div>
         </section>
 
@@ -262,8 +272,7 @@ function renderShell() {
         <section class="time-panel" id="timePanel"></section>
 
         <div class="footer">
-          <span>Расчеты выполняются в браузере по параметрам модели. Экономия времени показывается диапазоном и округляется до целой минуты.</span>
-          <span>Геометрия участков: пользовательский GeoJSON.</span>
+          <span>В качестве существующего времени в пути для корреспонденций с Москвой принято среднее время поездки при прибытии в Москву в утренний час-пик. Точка прибытия в Москве — ТТК.</span>
         </div>
       </main>
     </div>`;
@@ -278,8 +287,9 @@ function renderKpis() {
   const period = periodLabel(currentYear);
   const effectText = effect.max > 0 ? formatEffectRange(effect) : '0 мин';
   const timeText = formatTimeRange(time);
+  const measuresWord = russianPlural(included.length, 'мероприятие', 'мероприятия', 'мероприятий');
   document.querySelector('#kpis').innerHTML = `
-    <article class="kpi"><div class="kpi-value">${included.length}</div><div class="kpi-label">мероприятия <span class="kpi-context">в расчетном сценарии</span></div></article>
+    <article class="kpi"><div class="kpi-value">${included.length}</div><div class="kpi-label">${measuresWord} <span class="kpi-context">в расчетном сценарии</span></div></article>
     <article class="kpi"><div class="kpi-value">${Math.round(km)} км</div><div class="kpi-label">протяженность <span class="kpi-context">учтенных участков</span></div></article>
     <article class="kpi accent"><div class="kpi-value">${effectText}</div><div class="kpi-label">экономия времени для маршрута <span class="kpi-context">${escapeHtml(routeLabel(route))} · ${escapeHtml(period)}</span></div></article>
     <article class="kpi"><div class="kpi-value">${timeText}</div><div class="kpi-label">время в пути <span class="kpi-context">${escapeHtml(routeLabel(route))} · ${escapeHtml(period)}</span></div></article>`;
@@ -396,7 +406,7 @@ function renderDrawer() {
       <div><h3 class="drawer-title">${escapeHtml(section.name)}</h3>
         <div class="badges">
           <span class="badge"><span class="badge-dot" style="background:${color}"></span>${escapeHtml(section.status)}</span>
-          <span class="badge">Ввод: ${escapeHtml(section.commissionYear || 'не определен')}</span>
+          <span class="badge">Ввод (план): ${escapeHtml(section.commissionYear || 'не определен')}</span>
         </div>
       </div>
       <button class="drawer-close" id="drawerClose" type="button" aria-label="Закрыть">×</button>
